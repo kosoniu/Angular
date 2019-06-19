@@ -14,6 +14,15 @@ export class RecipeService {
         new Ingredient('Meat', 1),
         new Ingredient('French Fries', 10),
       ]
+    ),
+    new Recipe(
+      'Lazanki',
+      'This is delicious',
+      'https://static.gotujmy.pl/ZDJECIE_PRZEPISU_ETAP/lazanki-z-kapusta-i-kielbasa-406474.jpg',
+      [
+        new Ingredient('Noodles', 1),
+        new Ingredient('Becon', 10),
+      ]
     )
   ];
 
@@ -23,6 +32,10 @@ export class RecipeService {
 
   getRecipes() {
     return this.recipes.slice();
+  }
+
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
