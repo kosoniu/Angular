@@ -1,0 +1,15 @@
+.container {
+  margin-top: 30px;
+}
+
+.danger {
+  color: red;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+input.ng-valid {
+  border: 1px solid green;
+}
